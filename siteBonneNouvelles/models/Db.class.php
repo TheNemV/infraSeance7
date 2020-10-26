@@ -9,7 +9,7 @@ class Db
         try {
     //        $this->_db = new PDO('mysql:host=localhost;dbname=bdbn;charset=utf8', 'root', '');
     //        $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-		$this->_bd = parse_url(getenv("postgres://zwxbsxbapiwseu:18768c9776bb158c3ae95e737badf5f83fd0cc225b6c7312baf9a65586c3a391@ec2-18-203-62-227.eu-west-1.compute.amazonaws.com:5432/d18grda98estft"));
+		$this->_bd = parse_url(getenv("DATABASE_URL"));
 
 	$this->bd = new PDO("pgsql:" . sprintf(
     "host=%s;port=%s;user=%s;password=%s;dbname=%s",
