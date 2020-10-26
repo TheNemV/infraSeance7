@@ -13,10 +13,10 @@ class Db
 
 	$this->bd = new PDO("pgsql:" . sprintf(
     "host=%s;port=%s;user=%s;password=%s;dbname=%s",
-    $db["host"],
-    $db["port"],
-    $db["user"],
-    $db["pass"],
+    $db["ec2-18-203-62-227.eu-west-1.compute.amazonaws.com"],
+    $db["5432"],
+    $db["zwxbsxbapiwseu"],
+    $db["18768c9776bb158c3ae95e737badf5f83fd0cc225b6c7312baf9a65586c3a391"],
     ltrim($db["path"], "/")
 ));
         } 
